@@ -1,0 +1,20 @@
+Title: To design a Website
+Date: 2014/12/08
+Tags: design, html, css
+
+I really have had to make up my mind to come up with a simple and sleek website.
+It took me several days to think how my personal homepage should look like.
+Although, nowadays, every institute's home page provides a staff list where (usually) every staff member is asked to upload some content&mdash;see [my personal PIK page](https://www.pik-potsdam.de/members/krapp), for example&mdash;but this kind of design and content is not what I was looking for.
+And I love it simple!
+
+So, I decided that my personal website should have a simple layout, at least the entry page.
+Therefore, I chose to use tabs that, while popping up, show what the site is about.
+It doesn't, by the way, as of now!
+Who I am, showing a short CV, and showing what I'm interested in.
+The main entry page should also link to this blog which it does right now.
+
+So far, so good.
+To allow some interactive behavior I included CSS overlays that pop up while clicking on the respective tab.
+For a corporate website, I also use the same font _Josefin Slab_ and _EB Garamond_ which you can get from Google Fonts [here](http://www.google.com/fonts/specimen/Josefin+Slab) and [here](http://www.google.com/fonts/specimen/EB+Garamond).
+I like the style of that fonts; especially _Josefin Slab_ reminds me of the 20's or 30's.
+And _EB Garamond_ is quite good to read as well.

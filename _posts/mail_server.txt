@@ -1,0 +1,21 @@
+Title: To set up an email server
+Date: 2015/01/20
+Tags: server, administration, email
+
+Today, I set up an email server on my _raspberrypi_.
+Thanks to the [tutorial by Sam Hobbs](https://samhobbs.co.uk/raspberry-pi-email-server)!
+And it works.
+If you would like to give it a try, just drop me a [mail](mailto:mario@mariokrapp.com).
+
+Here's what you need:
+
+* [Postfix](http://www.postfix.org/documentation.html) as your mail transfer agent
+* [Dovecot](http://www.dovecot.org) as your IMAP server
+* A (trusted) certificate for encryption (SSL and the like)
+
+In principle, you could also add a spam filter and things like that.
+I skipped that for this reason.
+Because my domain has no static IP address ([Dynamic DNS](http://en.wikipedia.org/wiki/Dynamic_DNS)), sent mails are often regarded as spam.
+Hence, this is just an exercise in server administration.
+
+As an add-on I also installed [Roundcube](http://roundcube.net) as web-mail application.

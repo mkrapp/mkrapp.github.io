@@ -1,0 +1,82 @@
+body {
+	background-color: white;
+	font-family: helvetica, arial, sans-serif;
+	color: #333;
+	line-height: 1.5;
+	margin: 0 auto;
+	max-width: 40em;
+	padding: 0 1em;
+}
+
+/* overlay styles, all needed */
+.overlay {
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    border: 1px solid #888;
+    padding: 5px;
+    -moz-box-shadow: 0 1px 3px #111;
+    -webkit-box-shadow: 0 1px 3px #111;
+    box-shadow: 0 1px 3px #111;
+    border-radius: 1px;
+}
+
+div#about.overlay {
+    display: none;
+}
+
+div#cv.overlay {
+    display: none;
+}
+
+div#pub.overlay {
+    display: none;
+}
+
+a {
+	color: black !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+}
+
+div.title a {
+	color: black !important;
+	text-decoration: none !important;
+}
+
+#container {
+    font-family: 'Josefin Slab';
+    font-weight: 600;
+    font-size: 110%;
+    margin: 5px;
+}
+
+.simple a {
+    border: 1px solid #888;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0 0 0;
+    float: left;
+    width: 100px;
+    clear: both;
+    padding: 8px 0;
+    text-align: center;
+    -moz-box-shadow: 0 1px 3px #111;
+    -webkit-box-shadow: 0 1px 3px #111;
+    box-shadow: 0 1px 3px #111;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+}
+
+.simple a:hover {
+    background: #eee;
+}
+
+.simple a:active {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
