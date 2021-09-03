@@ -65,6 +65,7 @@ pre {
 blockquote {
     padding: 40px 50px 20px;
     position: relative;
+    z-index: -1;
 }
 blockquote p {
     font-family: "Utopia-italic";
