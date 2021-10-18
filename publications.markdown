@@ -5,17 +5,19 @@ permalink: /publications/
 order: 2
 ---
 
-† - joint first authors
+⋆ - joint first authors
 
 # Papers in review and pre-prints
 
-- D. Lowry, **M. Krapp**, N. Golledge, A. Alevropolous-Borrill: [*Global warming levels control time of emergence of Antarctic ice loss*](https://www.researchsquare.com/article/rs-356571/latest.pdf), 2021.
 - E.F. Miller, M. Leonardi, R. Beyer, **M. Krapp**, M. Somveille, G.L. Somma, P. Maisano Delser, A. Manica: [*Post-glacial expansion dynamics, not refugial isolation, shaped the genetic structure of a migratory bird, the Yellow Warbler (Setophaga petechia)*](https://www.biorxiv.org/content/10.1101/2021.05.10.443405v1.abstract), bioRxiv, 2021.
-- P. Maisano Delser†, **M. Krapp**†, R Beyer†, E.R. Jones, E.F. Miller, A. Hovhannisyan, et al.: [*Climate and mountains shaped human ancestral genetic lineages*](https://www.biorxiv.org/content/10.1101/2021.07.13.452067v1.abstract), bioRxiv, 2021.
+- P. Maisano Delser⋆, **M. Krapp**⋆, R Beyer⋆, E.R. Jones, E.F. Miller, A. Hovhannisyan, et al.: [*Climate and mountains shaped human ancestral genetic lineages*](https://www.biorxiv.org/content/10.1101/2021.07.13.452067v1.abstract), bioRxiv, 2021.
 
 # Peer-reviewed
 
 <ins>2021</ins>
+
+- D. Lowry, **M. Krapp**, N. Golledge, A. Alevropolous-Borrill: [*The influence of emissions scenarios on future Antarctic ice loss is unlikely to emerge this century*](https://doi.org/10.1038/s43247-021-00289-2), Commun Earth Environ 2, 221, 2021.
+<br/>[*Widespread collapse of West Antarctica’s ice sheet is avoidable if we keep global warming below 2°C*](https://theconversation.com/widespread-collapse-of-west-antarcticas-ice-sheet-is-avoidable-if-we-keep-global-warming-below-2-169651) *--The Conversation*
 
 - **M. Krapp**, R.M. Beyer, S.L. Edmundson, P.J. Valdes, A. Manica: [*A statistics-based reconstruction of high-resolution global terrestrial climate for the last 800,000 years*](https://doi.org/10.1038/s41597-021-01009-3), Sci Data, 228, 2021.
 <br/>[*How Earth's changing ecosystems may have driven human evolution*](https://www.newscientist.com/article/mg24132163-200-how-earths-changing-ecosystems-may-have-driven-human-evolution/) *--New Scientist* (about the 2019 pre-print)
@@ -23,7 +25,7 @@ order: 2
 - R.M. Beyer, **M. Krapp**, A. Eriksson, A. Manica: [*Climatic windows for human migration out of Africa in the past 300,000 years*](https://doi.org/10.1038/s41467-021-24779-1), Nature Communications volume 12, 4889, 2021.
 <br/>[*A Shifting Climate Gave Humans Many Opportunities to Leave Africa*](https://www.nytimes.com/2021/08/24/science/archaeology-africa-climate-sapiens.html) *--New York Times*
 
-- M. Will†, **M. Krapp**†, J.T. Stock, A. Manica: [*Different environmental variables predict body and brain size evolution in Homo*](https://doi.org/10.1038/s41467-021-24290-7), Nature Communications 12, 4116, 2021.
+- M. Will⋆, **M. Krapp**⋆, J.T. Stock, A. Manica: [*Different environmental variables predict body and brain size evolution in Homo*](https://doi.org/10.1038/s41467-021-24290-7), Nature Communications 12, 4116, 2021.
 <br/>[*Human body size shaped by climate, evolutionary study shows*](http://www.theguardian.com/science/2021/jul/08/human-body-size-shaped-by-climate-evolutionary-study-shows) *--The Guardian*
 
 <ins>2020</ins>
