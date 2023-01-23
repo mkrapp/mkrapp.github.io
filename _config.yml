@@ -18,20 +18,17 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Mario Krapp
+title: Mario Krapp, PhD
 email: mariokrapp@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Environmental Data Scientist.
-  Trying to understand the Earth System.
-  Working at GNS Science.
-  Living in Wellington, NZ.
+  Climate & Earth System Science | Problem Solving | Innovation | Strategy | Quality
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: mkrapp3000
 github_username:  mkrapp
 linkedin_username: mariokrapp
 instagram_username: makra3001
-copyright: 2021
+copyright: 2023
 
 # Build settings
 theme: minima

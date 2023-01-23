@@ -1,11 +1,17 @@
 ---
 layout: default
-title: etc
-permalink: /etc/
-order: 4
+title: Lists
+permalink: /lists/
+order: 2
 ---
 
 ## Books that inspired me
+
+### Fiction Favourites (2022)
+
+- [*One Hundred Years of Solitude*](https://www.goodreads.com/book/show/320.One_Hundred_Years_of_Solitude) by Gabriel García Márquez
+- [*The Drifters*](https://www.goodreads.com/book/show/42955.The_Drifters) by James A. Michener
+- [*The Song of Achilles*](https://www.goodreads.com/book/show/13623848-the-song-of-achilles) by Madeline Miller
 
 ### Fiction Favourites (2021)
 
@@ -13,20 +19,27 @@ order: 4
 - [*The Sojourn*](https://www.goodreads.com/book/show/9501104-the-sojourn) by Andrew Krivak
 - [*The Bear*](https://www.goodreads.com/book/show/45869112-the-bear) by Andrew Krivak
 
-### Focus & Personal Growth
+### Focus, Personal Growth, Strategy
 
 - [*The Book of Beautiful Questions: The Powerful Questions That Will Help You Decide, Create, Connect, and Lead*](https://www.goodreads.com/book/show/37941659-the-book-of-beautiful-questions) by Warren Berger, [https://amorebeautifulquestion.com]()
 - [*Deep Work: Rules for Focused Success in a Distracted World*](https://www.goodreads.com/book/show/28383248-deep-work) by Cal Newport
 - [*The Art of Doing Science and Engineering: Learning to Learn*](https://www.goodreads.com/book/show/530415.The_Art_of_Doing_Science_and_Engineering) by Richard Hamming
+- [*Good Strategy Bad Strategy: The Difference and Why It Matters*](https://www.goodreads.com/book/show/11721966-good-strategy-bad-strategy) by Richard P. Rumelt
+- [*The Five Invitations: Discovering What Death Can Teach Us About Living Fully*](https://www.goodreads.com/book/show/30139695-the-five-invitations) by Frank Ostaseski
+- [*Toward a Psychology of Being*](https://www.goodreads.com/book/show/332792.Toward_a_Psychology_of_Being) by Abraham H. Maslow
+
 
 ### Writing
 - [*Draft No. 4: On the Writing Process*](https://www.goodreads.com/book/show/18194765-draft-no-4) by John McPhee
 - [*On Writing: A Memoir of the Craft*](https://www.goodreads.com/book/show/10569.On_Writing) by Stephen King
+- [*Clear and Simple as the Truth: Writing Classic Prose*](https://www.goodreads.com/book/show/120549.Clear_and_Simple_as_the_Truth) by Francis-Noel Thomas & Mark Turner
 
-### Life, Science & Biology
+### Life, Science, Anthropology & Biology
+- [*The Dawn of Everything: A New History of Humanity*](https://www.goodreads.com/book/show/56269264-the-dawn-of-everything) by David Graeber &David Wengrow
+-  [*A Thousand Brains: A New Theory of Intelligence*](https://www.goodreads.com/book/show/54503521-a-thousand-brains) by Jeff Hawkins
+- [*The Collapse of Complex Societies*](https://www.goodreads.com/book/show/477.The_Collapse_of_Complex_Societies) by Joseph A. Tainter
 - [*The Demon-Haunted World: Science as a Candle in the Dark*](https://www.goodreads.com/book/show/17349.The_Demon_Haunted_World) by Carl Sagan
 - [*Wonderful Life: The Burgess Shale and the Nature of History*](https://www.goodreads.com/book/show/36475.Wonderful_Life) by Stephen Jay Gould
-- [*Sapiens: A Brief History of Humankind*](https://www.goodreads.com/book/show/23692271-sapiens) by Yuval Noah Harario
 - [*The Problems of Biology*](https://www.goodreads.com/book/show/5636928-the-problems-of-biology) by John Maynard Smith
 - [*The Vital Question: Energy, Evolution, and the Origins of Complex Life*](https://www.goodreads.com/book/show/26530386-the-vital-question) by Nick Lane
 - [*The Triple Helix: Gene, Organism, and Environment*](https://www.goodreads.com/book/show/185154.The_Triple_Helix) by Richard C. Lewontin
@@ -39,6 +52,9 @@ order: 4
 
 *How to Speak* by Patrick Winston:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Unzc731iCUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+*TIMELAPSE OF THE FUTURE: A Journey to the End of Time:*
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uD4izuDMUQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 *Nulli und Priesemut*
 <iframe width="560" height="315" src="https://www.youtube.com/embed/u32SxHmmgl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
