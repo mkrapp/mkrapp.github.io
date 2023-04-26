@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -19,27 +19,33 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Mario Krapp, PhD
-email: mariokrapp@gmail.com
+author:
+  name: Mario Krapp (© - 2023)
+  email: mariokrapp@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Climate & Earth System Science | Problem Solving | Innovation | Strategy | Quality
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: mkrapp3000
-github_username:  mkrapp
-linkedin_username: mariokrapp
-instagram_username: makra3001
 copyright: 2023
 
 # Build settings
-theme: minima
-  #plugins:
-  #  - jekyll-feed
-  #  - jekyll-toc
-kramdown:
-  parse_block_html: true
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 
-#minima:
-#  skin: dark
+plugins:
+  - jekyll-remote-theme
+
+remote_theme: jekyll/minima
+
+minima:
+  skin: auto
+  social_links:
+    - { platform: twitter, user_url: "https://twitter.com/mkrapp3000" }
+    - { platform: github,  user_url: "https://github.com/mkrapp" }
+    - { platform: google_scholar, user_url: "https://scholar.google.com/citations?user=Opzrl-cAAAAJ&hl=en" }
+    - { platform: linkedin, user_url: "https://www.linkedin.com/in/mariokrapp" }
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
