@@ -3,7 +3,6 @@ layout: post
 title: "How to calculate the heat flux within a snowpack"
 date: 2013-03-25
 author: "Mario"
-categories: snow model
 usemathjax: true
 ---
 

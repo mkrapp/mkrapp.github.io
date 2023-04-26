@@ -3,7 +3,6 @@ layout: post
 title: "Noise models for (paleo)climate applications"
 author: "Mario"
 date: 2022-09-08
-categories: noise, python, jupyter
 ---
 
 Insipred by [Matt Schubert](https://blog.ioces.com/matt/posts/colouring-noise/), I wanted to recreate his coloured noise models. Check out my Github repo [Noise4Paleo](https://github.com/mkrapp/noise4paleo).

@@ -5,7 +5,7 @@
 layout: home
 ---
 
-I am a *Senior Environmental Data Scientist*. I combine creative problem solving and climate science expertise with innovative thinking to influence strategic decision making.
+I am a senior *Environmental Data Scientist*. I combine creative problem solving and climate science expertise with innovative thinking to influence strategic decision making.
 
 Currently, me and my lovely family, we live in Wellington (New Zealand). I work at <a href="https://www.gns.cri.nz/about-us/staff-search/mario-krapp/" target="_blank">Te Pū Ao \| GNS Science</a>. If you're interested in my research, you can find a list of my publications on <a href="https://scholar.google.com/citations?user=Opzrl-cAAAAJ&hl=en" target="_blank">Google Scholar</a>. <a href="/assets/cv.pdf" target="_blank">Here</a> is my CV (updated 01/2023).
 

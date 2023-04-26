@@ -2,7 +2,6 @@
 layout: post
 title: "Cookiecutter for a more transparent and reproducible science"
 author: "Mario"
-categories: design, productivity, reproducibility, github
 date: 2016-07-25
 ---
 

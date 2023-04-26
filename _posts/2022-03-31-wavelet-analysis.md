@@ -3,7 +3,6 @@ layout: post
 title: "Wavelet analysis"
 author: "Mario"
 date: 2022-03-31
-categories: python, spectral analysis
 ---
 
 The interactive wavelet tool by Torrence & Compo from their "A Practical Guide to Wavelet Analysis" website was my go-to thing for running a wavelet analysis on my time series data for years.

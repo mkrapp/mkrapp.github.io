@@ -3,7 +3,6 @@ layout: post
 title: "Net Primary Productivity and the Miami Model"
 author: "Mario"
 date: 2017-11-20
-categories: models
 usemathjax: true
 ---
 

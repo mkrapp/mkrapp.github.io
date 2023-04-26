@@ -3,7 +3,6 @@ layout: post
 title: "Building and Running CESM"
 author: "Mario"
 date: 2016-03-24
-categories: models, code, CESM
 ---
 
 Recently I applied for a job where one requirement is to have experience with the Community Earth System Model (CESM). Therefore, this post is about how to build and run the publicly available CESM under Mac OS X. It is fairly straightforward but you need to pay some attention because Earth System Models are naturally complex and complicated software frameworks. Here are the steps to run CESM on your Mac.

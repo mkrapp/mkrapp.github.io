@@ -3,7 +3,6 @@ layout: post
 title: "The Ice Sheet model SICOPOLIS"
 author: "Mario"
 date: 2013-09-04
-categories: ice sheet
 ---
 
 Recently, I started working with [SICOPOLIS](http://sicopolis.greveweb.net/), a three-dimensional dynamic/thermodynamic ice sheet model.

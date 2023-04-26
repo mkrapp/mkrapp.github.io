@@ -2,7 +2,6 @@
 layout: post
 title: "Exceedance probability curves"
 author: "Mario"
-categories: statistics, python, code, models
 date: 2016-02-20
 ---
 
