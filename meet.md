@@ -2,7 +2,6 @@
 layout: base
 title: Meet
 permalink: /meet/
-order: 3
 ---
 
 <!-- Cal inline embed code begins -->

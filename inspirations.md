@@ -2,7 +2,6 @@
 layout: base
 title: Inspirations
 permalink: /inspirations/
-order: 2
 ---
 
 

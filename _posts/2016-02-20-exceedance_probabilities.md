@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Exceedance probability curves
-date: 2016/02/20
+title: "Exceedance probability curves"
+author: "Mario"
 categories: statistics, python, code, models
+date: 2016-02-20
 ---
 
 While working on a project proposal to estimate drought risks of some countries
@@ -71,9 +72,9 @@ ax2.legend(loc=0,framealpha=0.5,fontsize=12)
 
 A = np.vstack([ep.values, np.ones(len(ep.values))]).T
 [m, c], resid = np.linalg.lstsq(A, ser.values)[:2]
-print m, c
+print(m, c)
 r2 = 1 - resid / (len(ser.values) * np.var(ser.values))
-print r2
+print(r2)
 
 ax3 = plt.subplot(222)
 ax3.semilogx(100.*ep,ser.values,ls='',marker='o',label='data')

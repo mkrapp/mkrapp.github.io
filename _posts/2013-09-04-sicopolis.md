@@ -1,6 +1,7 @@
 ---
 layout: post
-title: The Ice Sheet model SICOPOLIS
+title: "The Ice Sheet model SICOPOLIS"
+author: "Mario"
 date: 2013-09-04
 categories: ice sheet
 ---

@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Building and Running CESM
+title: "Building and Running CESM"
+author: "Mario"
 date: 2016-03-24
 categories: models, code, CESM
 ---
 
 Recently I applied for a job where one requirement is to have experience with the Community Earth System Model (CESM). Therefore, this post is about how to build and run the publicly available CESM under Mac OS X. It is fairly straightforward but you need to pay some attention because Earth System Models are naturally complex and complicated software frameworks. Here are the steps to run CESM on your Mac.
 
-1. Register at the <a href="http://www.cesm.ucar.edu/models/register/register_cesm.cgi" target="_blank">CESM website</a> to obtain credentials for the source code download.
-2. Checkout the latest release (or whatever version you prefer) from the CESM SVN server
-3. Prepare and build a custom setup following the instructions by <a href="http://hannahlab.org/cesm-building-cesm-1-2-on-mac-osx/" target="_blank">Walter Hannah</a>
+1. Register at the [CESM website](http://www.cesm.ucar.edu/models/register/register_cesm.cgi) to obtain credentials for the source code download.
+2. Checkout the latest release (or whatever version you prefer) from the CESM SVN server.
+3. Prepare and build a custom setup following the instructions by [Walter Hannah](http://hannahlab.org/cesm-building-cesm-1-2-on-mac-osx/).
 4. Run the CESM model
 
 ## Checkout CESM source code from SVN repository
@@ -44,7 +45,7 @@ Now you are ready to create a new CESM setup I choose to run an Aquaplanet simul
 ./create_newcase -case <your case> -res T31_g37 -compset 2000_CAM5_SLND_SICE_AQUAP_SROF_SGLC_SWAV -mach userdefined 
 ```
 
-Other configurations, i.e., the compset, can be found on the <a href="http://www.cesm.ucar.edu/models/cesm1.2/cesm/doc/modelnl/compsets.html" target="_blank">CESM website</a>. Next, adjust the XML configuration files in `cesm1_2_2/scripts/<your_case>` where `<your_case>` is the name of the CESM setup you created before
+Other configurations, i.e., the compset, can be found on the [CESM website](http://www.cesm.ucar.edu/models/cesm1.2/cesm/doc/modelnl/compsets.html). Next, adjust the XML configuration files in `cesm1_2_2/scripts/<your_case>` where `<your_case>` is the name of the CESM setup you created before
 
 ```
 ./xmlchange -file env_build.xml -id GMAKE_J -val 8
@@ -130,6 +131,6 @@ Here's the zonal mean of the air temperature. I didn't pay too much attention to
 
 ## Tips and Tricks and Errors
 
-* To make the parallel-netcdf library available to everybody using `homebrew` for Mac OS X I already created a <a href="https://github.com/Homebrew/homebrew-science/pull/3466" target="_blank">PR</a> on Github.
+* To make the parallel-netcdf library available to everybody using `homebrew` for Mac OS X I already created a [PR](https://github.com/Homebrew/homebrew-science/pull/3466) on Github.
 * During the SVN checkout the MCT directory in `models/utils` was not updated. You can do so manually by entering `git clone https://github.com/MCSclimate/MCT.git mct` in `models/utils`.
-* Replace `isnanf` with `isnan` in `shr_isnan.c` as described <a href="https://bb.cgd.ucar.edu/porting-error-undefined-symbols-isnanf-shrsisnan-libcsmshareashrisnano" target="_blank">here</a>; other potential errors during that process are listed, explained and resolved <a href="http://hannahlab.org/cesm-common-errors-when-building-cesm-1-2-osx/" target="_blank">here</a>.
+* Replace `isnanf` with `isnan` in `shr_isnan.c` as described [here](https://bb.cgd.ucar.edu/porting-error-undefined-symbols-isnanf-shrsisnan-libcsmshareashrisnano); other potential errors during that process are listed, explained and resolved [here](http://hannahlab.org/cesm-common-errors-when-building-cesm-1-2-osx/).

@@ -32,9 +32,8 @@ copyright: 2023
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-
-plugins:
   - jekyll-remote-theme
+  - jekyll-target-blank
 
 remote_theme: jekyll/minima
 
@@ -45,6 +44,11 @@ minima:
     - { platform: github,  user_url: "https://github.com/mkrapp" }
     - { platform: google_scholar, user_url: "https://scholar.google.com/citations?user=Opzrl-cAAAAJ&hl=en" }
     - { platform: linkedin, user_url: "https://www.linkedin.com/in/mariokrapp" }
+
+header_pages:
+  - posts.md
+  - inspirations.md
+  - meet.md
 
 
 # Exclude from processing.
