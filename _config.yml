@@ -32,9 +32,14 @@ copyright: 2023
 
 # Build settings
 theme: minima
-plugins:
-  - jekyll-feed
-  - jekyll-twitter-plugin
+  #plugins:
+  #  - jekyll-feed
+  #  - jekyll-toc
+kramdown:
+  parse_block_html: true
+
+#minima:
+#  skin: dark
 
 # Exclude from processing.
 # The following items will not be processed, by default.
