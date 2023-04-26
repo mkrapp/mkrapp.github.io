@@ -1,6 +1,0 @@
-Title: Optimization problem solving with Pyomo
-Date: 2016/03/03
-Tags: python, pyomo, optimization, models
-
-Next on this blog: An example about the optimization modeling language <a
-href="http://www.pyomo.org" target="_blank">Pyomo</a>.
