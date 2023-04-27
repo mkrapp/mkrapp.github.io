@@ -7,11 +7,11 @@ date: 2022-03-31
 
 The interactive wavelet tool by Torrence & Compo from their "A Practical Guide to Wavelet Analysis" website was my go-to thing for running a wavelet analysis on my time series data for years.
 It has been offline for quite some time now.
-Anyway, here it is again, ready for your wavelet analysis:
+Anyway, [here](https://github.com/mkrapp/wavelet-analysis) it is again, ready for your wavelet analysis:
 
 Use `docker` to deploy and run locally:
 
-```
+```bash
 docker-compose -f docker-compose.yml up --build
 ```
 

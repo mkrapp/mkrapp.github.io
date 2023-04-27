@@ -51,6 +51,12 @@ header_pages:
   - meet.md
 
 markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    default_lang: python
+    css_class   : highlight
 
 
 # Exclude from processing.
