@@ -18,7 +18,7 @@ So I adopted the philosophy of the guys from the video above, which states that 
 You can find the source on [Github](https://github.com/mkrapp/cookiecutter-reproducible-science).
 Simply install it for your next science project:
 
-```
+```bash
 cookiecutter gh:mkrapp/cookiecutter-reproducible-science
 ```
 

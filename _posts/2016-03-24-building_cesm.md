@@ -14,7 +14,7 @@ Recently I applied for a job where one requirement is to have experience with th
 
 ## Checkout CESM source code from SVN repository
 
-```
+```bash
 svn co --username guestuser https://svn-ccsm-models.cgd.ucar.edu/cesm1/release_tags/cesm1_2_2 cesm1_2_2
 ```
 
@@ -22,7 +22,7 @@ svn co --username guestuser https://svn-ccsm-models.cgd.ucar.edu/cesm1/release_t
 
 You have to tell the CESM setup framework that you would like to use the GNU compiler, the NetCDF and the Parallel-NetCDF libraries for your "undefined" Mac OS X machine. Therefore, edit `ccsm_utils/Machines/config_compilers.xml`:
 
-```
+```xml
 <compiler MACH="userdefined">
   <ADD_FFLAGS> -fno-range-check -fcray-pointer -arch x86_64 </ADD_FFLAGS>
   <NETCDF_PATH>/usr/local/Cellar/netcdf/4.3.3.1_4</NETCDF_PATH>
@@ -40,17 +40,17 @@ You have to tell the CESM setup framework that you would like to use the GNU com
 
 Now you are ready to create a new CESM setup I choose to run an Aquaplanet simulation in CAM5 hoping that this will not take too long to complete. In `cesm1_2_2/scripts` type
 
-```
+```bash
 ./create_newcase -case <your case> -res T31_g37 -compset 2000_CAM5_SLND_SICE_AQUAP_SROF_SGLC_SWAV -mach userdefined 
 ```
 
 Other configurations, i.e., the compset, can be found on the [CESM website](http://www.cesm.ucar.edu/models/cesm1.2/cesm/doc/modelnl/compsets.html). Next, adjust the XML configuration files in `cesm1_2_2/scripts/<your_case>` where `<your_case>` is the name of the CESM setup you created before
 
-```
+```bash
 ./xmlchange -file env_build.xml -id GMAKE_J -val 8
 ./xmlchange -file env_build.xml -id GMAKE -val make
-./xmlchange -file env_build.xml -id OS -val darwin 
-./xmlchange -file env_build.xml -id MPILIB -val mpich 
+./xmlchange -file env_build.xml -id OS -val darwin
+./xmlchange -file env_build.xml -id MPILIB -val mpich
 ./xmlchange -file env_build.xml -id COMPILER -val gnu
 ./xmlchange -file env_build.xml -id CESMSCRATCHROOT -val ~/Projects/cesm1_2_2
 ./xmlchange -file env_build.xml -id EXEROOT -val ~/Projects/cesm/my_model/bld
@@ -58,7 +58,7 @@ Other configurations, i.e., the compset, can be found on the [CESM website](http
 
 and for the build environment
 
-```
+```bash
 mkdir -p ~/Projects/cesm/my_model
 mkdir -p ~/Projects/cesm/input
 ./xmlchange -file env_run.xml -id RUNDIR -val ~/Projects/cesm/my_model/run
@@ -67,22 +67,22 @@ mkdir -p ~/Projects/cesm/input
 
 and to change the default number (64) of used CPUs to 2:
 
-```
+```bash
 ./xmlchange -file env_mach_pes.xml -id MAX_TASKS_PER_NODE -val 1
-./xmlchange -file env_mach_pes.xml -id NTASKS_ATM -val 2    
-./xmlchange -file env_mach_pes.xml -id NTASKS_LND -val 2    
-./xmlchange -file env_mach_pes.xml -id NTASKS_ICE -val 2    
-./xmlchange -file env_mach_pes.xml -id NTASKS_OCN -val 2    
-./xmlchange -file env_mach_pes.xml -id NTASKS_CPL -val 2    
-./xmlchange -file env_mach_pes.xml -id NTASKS_GLC -val 2    
-./xmlchange -file env_mach_pes.xml -id NTASKS_ROF -val 2    
-./xmlchange -file env_mach_pes.xml -id NTASKS_WAV -val 2    
+./xmlchange -file env_mach_pes.xml -id NTASKS_ATM -val 2
+./xmlchange -file env_mach_pes.xml -id NTASKS_LND -val 2
+./xmlchange -file env_mach_pes.xml -id NTASKS_ICE -val 2
+./xmlchange -file env_mach_pes.xml -id NTASKS_OCN -val 2
+./xmlchange -file env_mach_pes.xml -id NTASKS_CPL -val 2
+./xmlchange -file env_mach_pes.xml -id NTASKS_GLC -val 2
+./xmlchange -file env_mach_pes.xml -id NTASKS_ROF -val 2
+./xmlchange -file env_mach_pes.xml -id NTASKS_WAV -val 2
 ./xmlchange -file env_mach_pes.xml -id TOTALPES -val 2
 ```
 
 These changes are processed via `./cesm_setup` and now you can start the build process in `<your case>/`
 
-```
+```bash
 ./<your case>.build
 ```
 
@@ -90,14 +90,14 @@ These changes are processed via `./cesm_setup` and now you can start the build p
 
 Finally, you need to uncomment one of those two lines in `<your case>.run`
 
-```
+```bash
 #mpiexec -n 2 $EXEROOT/cesm.exe >&! cesm.log.$LID
 #mpirun -np 2 $EXEROOT/cesm.exe >&! cesm.log.$LID
 ```
 
 Now, you can run your CESM setup on your Mac OS X
 
-```
+```bash
 ./<your case>.run
 ```
 

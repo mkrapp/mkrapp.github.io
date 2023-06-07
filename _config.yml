@@ -50,13 +50,16 @@ header_pages:
   - inspirations.md
   - meet.md
 
-markdown: kramdown
-highlighter: rouge
-kramdown:
-  input: GFM
-  syntax_highlighter_opts:
-    default_lang: python
-    css_class   : highlight
+    #markdown: kramdown
+    #highlighter: rouge
+    #kramdown:
+    #  input: GFM
+    #  syntax_highlighter_opts:
+    #    default_lang: python
+    #    css_class   : highlight
+
+    #minima:
+    #  skin: solarized-light
 
 
 # Exclude from processing.
