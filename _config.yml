@@ -20,7 +20,7 @@
 
 title: Mario Krapp, PhD
 author:
-  name: Mario Krapp (© - 2023)
+  name: Mario Krapp (© 2023)
   email: mariokrapp@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Climate & Earth System Science | Problem Solving | Innovation | Strategy | Quality
@@ -49,18 +49,6 @@ header_pages:
   - posts.md
   - inspirations.md
   - meet.md
-
-    #markdown: kramdown
-    #highlighter: rouge
-    #kramdown:
-    #  input: GFM
-    #  syntax_highlighter_opts:
-    #    default_lang: python
-    #    css_class   : highlight
-
-    #minima:
-    #  skin: solarized-light
-
 
 # Exclude from processing.
 # The following items will not be processed, by default.
