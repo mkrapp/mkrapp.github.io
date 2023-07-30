@@ -48,6 +48,7 @@ minima:
 header_pages:
   - posts.md
   - inspirations.md
+  - resources.md
   - meet.md
 
 # Exclude from processing.
