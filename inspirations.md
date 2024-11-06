@@ -19,13 +19,25 @@ permalink: /inspirations/
 
 # Books that inspired me
 
-## Fiction Favourites (2022)
+## Favourites (2024)
+
+* [*The Price of Time*](https://www.goodreads.com/book/show/59056157-the-price-of-time) by Edward Chancellor
+* [*Meine Schwester*](https://www.goodreads.com/book/show/59704571-meine-schwester) by Bettina Flitner
+* [*The Worst Journey in the World*](https://www.goodreads.com/book/show/48503.The_Worst_Journey_in_the_World) by Apsley Cherry-Garrard
+
+## Favourites (2023)
+
+* [*A River Runs Through It*](https://www.goodreads.com/en/book/show/38300.A_River_Runs_Through_It) by Norman Maclean
+* [*Kruso*](https://www.goodreads.com/book/show/22594449-kruso) by Lutz Seiler
+* [*Desert Solitaire*](https://www.goodreads.com/book/show/214614.Desert_Solitaire) by Edward Abbey
+
+## Favourites (2022)
 
 * [*One Hundred Years of Solitude*](https://www.goodreads.com/book/show/320.One_Hundred_Years_of_Solitude) by Gabriel García Márquez
 * [*The Drifters*](https://www.goodreads.com/book/show/42955.The_Drifters) by James A. Michener
 * [*The Song of Achilles*](https://www.goodreads.com/book/show/13623848-the-song-of-achilles) by Madeline Miller
 
-## Fiction Favourites (2021)
+## Favourites (2021)
 
 * [*Piranesi*](https://www.goodreads.com/book/show/50202953-piranesi) by Susanna Clarke
 * [*The Sojourn*](https://www.goodreads.com/book/show/9501104-the-sojourn) by Andrew Krivak
@@ -39,6 +51,7 @@ permalink: /inspirations/
 * [*Good Strategy Bad Strategy: The Difference and Why It Matters*](https://www.goodreads.com/book/show/11721966-good-strategy-bad-strategy) by Richard P. Rumelt
 * [*The Five Invitations: Discovering What Death Can Teach Us About Living Fully*](https://www.goodreads.com/book/show/30139695-the-five-invitations) by Frank Ostaseski
 * [*Toward a Psychology of Being*](https://www.goodreads.com/book/show/332792.Toward_a_Psychology_of_Being) by Abraham H. Maslow
+* [*How to Win Friends & Influence People*](https://www.goodreads.com/book/show/4865.How_to_Win_Friends_Influence_People) by Dale Carnegie
 
 ## Writing
 * [*Draft No. 4: On the Writing Process*](https://www.goodreads.com/book/show/18194765-draft-no-4) by John McPhee
@@ -55,6 +68,7 @@ permalink: /inspirations/
 * [*The Vital Question: Energy, Evolution, and the Origins of Complex Life*](https://www.goodreads.com/book/show/26530386-the-vital-question) by Nick Lane
 * [*The Triple Helix: Gene, Organism, and Environment*](https://www.goodreads.com/book/show/185154.The_Triple_Helix) by Richard C. Lewontin
 * [*Behave: The Biology of Humans at Our Best and Worst*](https://www.goodreads.com/book/show/31170723-behave) by Robert M. Sapolsky
+* [*The Origin of Consciousness in the Breakdown of the Bicameral Mind*](https://www.goodreads.com/book/show/22478.The_Origin_of_Consciousness_in_the_Breakdown_of_the_Bicameral_Mind) by Julian Jaynes
 
 ---
 
