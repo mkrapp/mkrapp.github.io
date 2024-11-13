@@ -20,13 +20,13 @@
 
 title: Mario Krapp, PhD
 author:
-  name: Mario Krapp (© 2023)
+  name: Mario Krapp (© 2013-2024)
   email: mariokrapp@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Climate & Earth System Science | Problem Solving | Innovation | Strategy | Quality
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-copyright: 2023
+copyright: 2013-2024
 
 # Build settings
 plugins:
@@ -40,7 +40,7 @@ remote_theme: jekyll/minima
 minima:
   skin: auto
   social_links:
-    - { platform: twitter, user_url: "https://twitter.com/mkrapp3000" }
+    - { platform: bluesky, user_url: "https://bsky.app/profile/mariokrapp.bsky.social" }
     - { platform: github,  user_url: "https://github.com/mkrapp" }
     - { platform: google_scholar, user_url: "https://scholar.google.com/citations?user=Opzrl-cAAAAJ&hl=en" }
     - { platform: linkedin, user_url: "https://www.linkedin.com/in/mariokrapp" }
