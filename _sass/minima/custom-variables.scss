@@ -6,3 +6,14 @@ $code-font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 	--minima-background-color: #fffff7;
 	--minima-code-background-color: #f7f9fa;
 }
+input {
+width: 30%; /* or a fixed pixel value */
+margin: 0 auto;
+font-size: 16px;
+padding: 5px;
+}
+canvas {
+width: 80%; /* or a fixed pixel value */
+margin: 0 auto;
+border: 1px solid #ccc;
+}
