@@ -15,7 +15,7 @@ As a motivating example, I showed an aerial image that I took during a helicopte
 
 There is so much structure in that image and I thought, "I could come up with an approximation for that river bed!".
 
-A few hours later, I had a *phenomenological* model that would describe the main features of the river bed and the flow of the water within.
+A few hours later (and thanks to ChatGPT), I had a *phenomenological* model that would describe the main features of the river bed and the flow of the water within.
 
 The toy model below has 3 main parameters, *displacement*, *decay*, and *max dimension*. You can try to match the real world by changing those. *water percentage* is a visual effect that color-codes a percentage of all lines in a watery color.
 
