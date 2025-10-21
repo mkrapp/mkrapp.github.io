@@ -1,0 +1,138 @@
+---
+layout: base
+title: Notan
+permalink: /notan
+---
+
+# Notan for values exercises
+
+[Notan](https://en.wikipedia.org/wiki/Notan){:target="_blank"} is the Japanese term that is used in arts to describe the balance of light and shade. It simplifies an image and helps us see value as shapes instead of looking at lines.
+
+This tool is insipred by the [Proko's values tool](https://www.proko.com/values){:target="_blank"}.
+
+<input id="file" type="file" accept="image/*"><br>
+<label>Blur: <input id="blurRange" type="range" min="0" max="8" step="1" value="2"></label>
+<label>Levels: <input id="levelsRange" type="range" min="2" max="6" step="1" value="3"></label>
+<button id="download">Download PNG</button>
+<br><br>
+<canvas id="output"></canvas>
+<canvas id="source" style="display:none"></canvas>
+<canvas id="histogram" width="512" height="150"></canvas>
+<div id="sliders"></div>
+
+<script>
+const fileEl = document.getElementById('file');
+const blurRange = document.getElementById('blurRange');
+const levelsRange = document.getElementById('levelsRange');
+const output = document.getElementById('output');
+const source = document.getElementById('source');
+const histogramCanvas = document.getElementById('histogram');
+const slidersDiv = document.getElementById('sliders');
+const downloadBtn = document.getElementById('download');
+
+let img = new Image();
+let thresholds = [];
+
+fileEl.addEventListener('change', handleFile);
+blurRange.addEventListener('input', render);
+levelsRange.addEventListener('input', ()=>{generateThresholdSliders(); render();});
+downloadBtn.addEventListener('click', downloadPNG);
+
+function handleFile(e){
+  const f = e.target.files && e.target.files[0];
+  if(!f) return;
+  const url = URL.createObjectURL(f);
+  img = new Image();
+  img.onload = ()=>{ URL.revokeObjectURL(url); render(); };
+  img.src = url;
+}
+
+function generateThresholdSliders(){
+  slidersDiv.innerHTML = '';
+  const levels = parseInt(levelsRange.value);
+  thresholds = [];
+  for(let i=0;i<levels-1;i++){
+    const slider = document.createElement('input');
+    slider.type = 'range';
+    slider.min = 0; slider.max = 255; slider.value = Math.round(255*(i+1)/levels);
+    slider.dataset.index = i;
+    slider.addEventListener('input', ()=>{ thresholds[i] = parseInt(slider.value); render(); });
+    slidersDiv.appendChild(document.createTextNode(`Threshold ${i+1}: `));
+    slidersDiv.appendChild(slider);
+    slidersDiv.appendChild(document.createElement('br'));
+    thresholds.push(parseInt(slider.value));
+  }
+}
+
+generateThresholdSliders();
+
+function render(){
+  if(!img || !img.complete || img.naturalWidth===0) return;
+  const blur = parseInt(blurRange.value,10);
+  const levels = Math.max(2, parseInt(levelsRange.value,10));
+  if(thresholds.length!==levels-1) generateThresholdSliders();
+
+  output.width = img.naturalWidth;
+  output.height = img.naturalHeight;
+  source.width = img.naturalWidth;
+  source.height = img.naturalHeight;
+
+  const sctx = source.getContext('2d');
+  const octx = output.getContext('2d');
+  sctx.filter = blur > 0 ? `blur(${blur}px)` : 'none';
+  sctx.drawImage(img, 0, 0, source.width, source.height);
+
+  const imgData = sctx.getImageData(0,0,source.width,source.height);
+  const data = imgData.data;
+  const hist = new Array(256).fill(0);
+
+  for(let i=0;i<data.length;i+=4){
+    const r = data[i], g = data[i+1], b = data[i+2];
+    let lum = 0.2126*r + 0.7152*g + 0.0722*b;
+    hist[Math.floor(lum)]++;
+  }
+
+  drawHistogram(hist);
+
+  // Posterize using thresholds
+  const sortedT = [...thresholds].sort((a,b)=>a-b);
+  for(let i=0;i<data.length;i+=4){
+    const r = data[i], g = data[i+1], b = data[i+2];
+    let lum = 0.2126*r + 0.7152*g + 0.0722*b;
+    let level = 0;
+    while(level < sortedT.length && lum > sortedT[level]) level++;
+    const v = Math.round(255 * level / (levels-1));
+    data[i]=data[i+1]=data[i+2]=v;
+  }
+  octx.putImageData(imgData,0,0);
+}
+
+function drawHistogram(hist){
+  const ctx = histogramCanvas.getContext('2d');
+  ctx.clearRect(0,0,histogramCanvas.width,histogramCanvas.height);
+  const max = Math.max(...hist);
+  const w = histogramCanvas.width / hist.length;
+  for(let i=0;i<hist.length;i++){
+    const h = (hist[i]/max)*histogramCanvas.height;
+    ctx.fillStyle = '#999';
+    ctx.fillRect(i*w, histogramCanvas.height-h, w, h);
+  }
+  // Draw threshold lines
+  ctx.strokeStyle='red';
+  ctx.lineWidth=1;
+  thresholds.forEach(t=>{
+    ctx.beginPath();
+    const x = t/255*histogramCanvas.width;
+    ctx.moveTo(x,0);ctx.lineTo(x,histogramCanvas.height);
+    ctx.stroke();
+  });
+}
+
+function downloadPNG(){
+  const link = document.createElement('a');
+  link.download = 'notan.png';
+  link.href = output.toDataURL('image/png');
+  link.click();
+}
+</script>
+
