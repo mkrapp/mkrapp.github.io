@@ -6,7 +6,7 @@ permalink: /notan
 
 # Notan for values exercises
 
-[Notan](https://en.wikipedia.org/wiki/Notan){:target="_blank"} is the Japanese term that is used in arts to describe the balance of light and shade. It simplifies an image and helps us see value as shapes instead of looking at lines.
+[Notan](https://en.wikipedia.org/wiki/Notan){:target="_blank"} is a Japanese word that is used in arts to describe the balance of light and shade. As a visual aid, Notan helps us seeing an image as value shapes, not as contour lines.
 
 This tool is insipred by the [Proko's values tool](https://www.proko.com/values){:target="_blank"}.
 
