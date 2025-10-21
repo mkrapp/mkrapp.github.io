@@ -64,6 +64,66 @@ function generateThresholdSliders(){
   }
 }
 
+// Simple box blur (works on mobile)
+function blurCanvas(canvas, radius = 2, iterations = 2) {
+  const ctx = canvas.getContext('2d');
+  let { width, height } = canvas;
+  let imageData = ctx.getImageData(0, 0, width, height);
+  let data = imageData.data;
+  const tmp = new Uint8ClampedArray(data);
+
+  for (let iter = 0; iter < iterations; iter++) {
+    // Horizontal pass
+    for (let y = 0; y < height; y++) {
+      let offset = y * width * 4;
+      for (let x = 0; x < width; x++) {
+        let r = 0, g = 0, b = 0, count = 0;
+        for (let dx = -radius; dx <= radius; dx++) {
+          const ix = x + dx;
+          if (ix >= 0 && ix < width) {
+            const i = offset + ix * 4;
+            r += tmp[i];
+            g += tmp[i + 1];
+            b += tmp[i + 2];
+            count++;
+          }
+        }
+        const i = offset + x * 4;
+        data[i] = r / count;
+        data[i + 1] = g / count;
+        data[i + 2] = b / count;
+      }
+    }
+
+    tmp.set(data); // Copy back
+
+    // Vertical pass
+    for (let x = 0; x < width; x++) {
+      for (let y = 0; y < height; y++) {
+        let r = 0, g = 0, b = 0, count = 0;
+        for (let dy = -radius; dy <= radius; dy++) {
+          const iy = y + dy;
+          if (iy >= 0 && iy < height) {
+            const i = (iy * width + x) * 4;
+            r += tmp[i];
+            g += tmp[i + 1];
+            b += tmp[i + 2];
+            count++;
+          }
+        }
+        const i = (y * width + x) * 4;
+        data[i] = r / count;
+        data[i + 1] = g / count;
+        data[i + 2] = b / count;
+      }
+    }
+
+    tmp.set(data);
+  }
+
+  ctx.putImageData(imageData, 0, 0);
+}
+
 generateThresholdSliders();
 
 function render(){
@@ -79,8 +139,13 @@ function render(){
 
   const sctx = source.getContext('2d');
   const octx = output.getContext('2d');
-  sctx.filter = blur > 0 ? `blur(${blur}px)` : 'none';
+  sctx.filter = 'none';
   sctx.drawImage(img, 0, 0, source.width, source.height);
+
+  // Apply custom blur after drawing
+  if (blur > 0) {
+    blurCanvas(source, blur); // our JS blur filter
+  }
 
   const imgData = sctx.getImageData(0,0,source.width,source.height);
   const data = imgData.data;
