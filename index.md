@@ -13,9 +13,4 @@ You can find me on <a href="https://www.linkedin.com/in/mariokrapp/" target="_bl
 
 <br>
 
-<figure>
-<a href="/assets/diyar-shahbaz-Xxz97xNbdHs-unsplash.jpg" target="_blank"><img src="/assets/diyar-shahbaz-Xxz97xNbdHs-unsplash.jpg" width="100%"></a>
-<figcaption><em>
-Photo by <a href="https://unsplash.com/@diyarshahbaz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Diyar Shahbaz</a> on <a href="https://unsplash.com/images/stock/creative-common?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-</em></figcaption>
-</figure>
+![](assets/image01.jpg)
