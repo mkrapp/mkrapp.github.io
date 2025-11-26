@@ -57,6 +57,7 @@ permalink: /inspirations/
 * [*Draft No. 4: On the Writing Process*](https://www.goodreads.com/book/show/18194765-draft-no-4) by John McPhee
 * [*On Writing: A Memoir of the Craft*](https://www.goodreads.com/book/show/10569.On_Writing) by Stephen King
 * [*Clear and Simple as the Truth: Writing Classic Prose*](https://www.goodreads.com/book/show/120549.Clear_and_Simple_as_the_Truth) by Francis-Noel Thomas & Mark Turner
+* [*The Way To Write*](https://www.goodreads.com/book/show/1293848.The_Way_To_Write) by John Fairfax & John Moat
 
 ## Life, Science, Anthropology & Biology
 * [*The Dawn of Everything: A New History of Humanity*](https://www.goodreads.com/book/show/56269264-the-dawn-of-everything) by David Graeber &David Wengrow
@@ -92,8 +93,6 @@ permalink: /inspirations/
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Unzc731iCUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 * *TIMELAPSE OF THE FUTURE: A Journey to the End of Time:*
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uD4izuDMUQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-* *Nulli und Priesemut*
-<iframe width="560" height="315" src="https://www.youtube.com/embed/u32SxHmmgl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
