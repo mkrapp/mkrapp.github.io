@@ -25,16 +25,6 @@ And that would be a shame.
   <script src="https://d3js.org/d3.v7.min.js"></script>
 
   <style>
-    body {
-      margin: 24px;
-      color: #222;
-      background: #fafafa;
-    }
-
-    h1 {
-      font-size: 22px;
-      margin-bottom: 6px;
-    }
 
     .note {
       max-width: 1050px;
@@ -654,7 +644,7 @@ $$
 n\,P \frac{r(1+r)^n}{(1+r)^n-1} =  2P
 $$
 
-\\(P\\)) cancels out.
+\\(P\\) cancels out.
 This means our answer doesn't depend on the principal loan amount \\(P\\).
 
 We are left with
@@ -663,7 +653,7 @@ $$
 n\frac{r(1+r)^n}{(1+r)^n-1} = 2
 $$
 
-We can rewrite \((r\\) and \\(n\\) in annual-rates-and-years form.
+We can rewrite \\(r\\) and \\(n\\) in annual-rates-and-years form.
 With \\(R\\) as the annual interest rate and \\(T\\) as term in years we have \\(r= \frac{R}/{12}\\) and \\(n=12\,T\\).
 So
 
@@ -694,11 +684,11 @@ $$
 Let \\(x = R\,T\\), then
 
 $$
-\frac{x}{1-e^{-x} = 2
+\frac{x}{1-e^{-x}} = 2
 $$
 
 This equation has the solution \\(x \approx 1.594\\).
-So the mental rule is \\(\text{annual rate}\;\times\;\text{years} \approx 1.6\\).
+So the mental rule is \\(\boxed{\text{annual rate}\;\times\;\text{years} \approx 1.6}\\).
 
 Examples:
 
