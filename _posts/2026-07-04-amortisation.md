@@ -203,6 +203,7 @@ The contour lines show combinations of **interest rate** and **loan term** that 
   }
 
   function clamp(x, lo, hi) {
+    if (!Number.isFinite(x)) return lo;
     return Math.max(lo, Math.min(hi, x));
   }
 
@@ -526,10 +527,19 @@ The contour lines show combinations of **interest rate** and **loan term** that 
   // Interaction
   // ------------------------------------------------------------
   function setRateTermFromPointer(event) {
-    const [mx, my] = d3.pointer(event);
+    // d3.drag passes a custom drag event.
+    // For click events, use the event directly.
+    // For drag events, use event.sourceEvent, which is the original mouse/pointer event.
+    const source = event.sourceEvent || event;
 
-    const term = Math.round(clamp(xTerm.invert(mx), termDomain[0], termDomain[1]));
-    const rate = Math.round(clamp(yRate.invert(my), rateDomain[0], rateDomain[1]) * 10) / 10;
+    // Always compute coordinates relative to the SVG, not relative to the event target.
+    const [mx, my] = d3.pointer(source, svg.node());
+
+    const termRaw = xTerm.invert(mx);
+    const rateRaw = yRate.invert(my);
+
+    const term = Math.round(clamp(termRaw, termDomain[0], termDomain[1]));
+    const rate = Math.round(clamp(rateRaw, rateDomain[0], rateDomain[1]) * 10) / 10;
 
     termInput.property("value", term);
     rateInput.property("value", rate);
@@ -541,7 +551,8 @@ The contour lines show combinations of **interest rate** and **loan term** that 
     .on("click", setRateTermFromPointer)
     .call(
       d3.drag()
-        .on("start drag", setRateTermFromPointer)
+        .on("start", setRateTermFromPointer)
+        .on("drag", setRateTermFromPointer)
     );
 
   principalInput.on("input", () => update(true));
@@ -654,7 +665,7 @@ n\frac{r(1+r)^n}{(1+r)^n-1} = 2
 $$
 
 We can rewrite \\(r\\) and \\(n\\) in annual-rates-and-years form.
-With \\(R\\) as the annual interest rate and \\(T\\) as term in years we have \\(r= \frac{R}/{12}\\) and \\(n=12\,T\\).
+With \\(R\\) as the annual interest rate and \\(T\\) as term in years we have \\(r = \frac{R}{12}\\) and \\(n=12\,T\\).
 So
 
 $$
