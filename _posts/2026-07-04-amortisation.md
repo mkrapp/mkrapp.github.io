@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Mortage calculator"
+title: "Mortgage calculator"
 author: "Mario"
 date: 2026-07-04
 usemathjax: true
@@ -12,15 +12,20 @@ I don't like the mortgage calculators banks put on their website.
 You type in a bunch of numbers and then you get one number back.
 
 Life moves much faster than this.
-Now you think it's 30 years, then it's 25, mmmh, and how about an interest rate of 5.5% instead of 4.8%.
-You don't want to retype it each time.
-You also wouldn't learn about [amortization](https://en.wikipedia.org/wiki/Amortization_(accounting)){:target="_blank"} and that would be a shame.
+Now you think it's 30 years, then it's 25, mmmh, and how about an interest rate of 5.5% p.a. instead of 4.8% p.a.
+You don't want to type that in each time, do you?
+
+These mortgage calculators are also not showing all the information.
+Rarely do you see straight away how much interest you have to pay.
+For a 30-year loan that can be as much as the principal loan you want to borrow.
+
+Worst of all, you wouldn't learn how beautiful [amortization](https://en.wikipedia.org/wiki/Amortization_(accounting)){:target="_blank"} can look like.
+And that would be a shame.
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
 
   <style>
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 24px;
       color: #222;
       background: #fafafa;
@@ -619,4 +624,86 @@ $$
 M = P \frac{r(1+r)^n}{(1+r)^n-1}.
 $$
 
-In case of monthly repayments, we divide the annual interest rate (it's usually given as i% p.a., which is short for *per annum*, which is Latin for per year) by 12 and have to multiply \\(n\\) with 12 if the duration of the term is in years.
+In case of monthly repayments, we divide the annual interest rate (it's usually given as % p.a., which is short for *per annum*, which is Latin for per year) by 12 and have to multiply \\(n\\) with 12 if the duration of the term is in years.
+
+Let's find out under what conditions the principal equals the interest paid.
+
+The total amount repaid is \\(n\,M\\).
+The total interest is \\(I = n\,M - P\\).
+And we want:
+
+$$
+I = P
+$$
+
+A little algebra turns this into
+
+$$
+n\,M - P = P
+$$
+
+or:
+
+$$
+n\,M = 2P
+$$
+
+We can substitute the amortization formula back for \\(M\\):
+
+$$
+n\,P \frac{r(1+r)^n}{(1+r)^n-1} =  2P
+$$
+
+\\(P\\)) cancels out.
+This means our answer doesn't depend on the principal loan amount \\(P\\).
+
+We are left with
+
+$$
+n\frac{r(1+r)^n}{(1+r)^n-1} = 2
+$$
+
+We can rewrite \((r\\) and \\(n\\) in annual-rates-and-years form.
+With \\(R\\) as the annual interest rate and \\(T\\) as term in years we have \\(r= \frac{R}/{12}\\) and \\(n=12\,T\\).
+So
+
+$$
+n\,r = 12\,T \cdot \frac{R}{12} = R\,T
+$$
+
+The exact condition becomes
+
+$$
+\frac{R\,T(1+\frac{R}{12})^{12\,T}}{(1+\frac{R}{12})^{12\,T}-1} = 2
+$$
+
+The quality of principal and interest depends mostly on the product \\(R\,T\\), or the annual rate \\(\times\\) years.
+
+We can get a useful heuristic when we replace monthly compounding with annual compounding
+
+$$
+\left(1+\frac{R}{12}\right)^{-12\,T} \approx e^{-R\,T}
+$$
+
+Then the condition becomes
+
+$$
+\frac{R\,T}{1-e^{-R\,T}} = 2
+$$
+
+Let \\(x = R\,T\\), then
+
+$$
+\frac{x}{1-e^{-x} = 2
+$$
+
+This equation has the solution \\(x \approx 1.594\\).
+So the mental rule is \\(\text{annual rate}\;\times\;\text{years} \approx 1.6\\).
+
+Examples:
+
+$$
+0.053\,\times\,30 \approx 1.59
+$$
+
+So whenever you find a loan in the wild where the product of annual interest rate times its duration equals 1.6 you know that someone is paying the same amount on interest as their loan is worth.
