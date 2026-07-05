@@ -189,10 +189,6 @@ But the the total paid depends on where you are on that $4,000 contour line.
 Now, imagine you have a much higher loan and the loan term extends to infinity. This way you could repay a higher loan indefinitely with a reasonable monthly repayment.
 That's what we call ***rent***. 🤩
 
-## How it works
-
-The contour lines show combinations of **interest rate** and **loan term** that produce the same monthly repayment for the selected loan amount. This makes the trade-off visible: for a fixed loan, a shorter term can have the same repayment effect as a higher interest rate, and vice versa. 
-
 <svg id="viz" width="1100" height="760" viewBox="0 0 1100 760"></svg>
 
 <script>
@@ -633,7 +629,11 @@ The contour lines show combinations of **interest rate** and **loan term** that 
   update(false);
 </script>
 
-## What about the math?
+## How it works
+
+The contour lines show combinations of **interest rate** and **loan term** that produce the same monthly repayment for the selected loan amount. This makes the trade-off visible: for a fixed loan, a shorter term can have the same repayment effect as a higher interest rate, and vice versa. 
+
+## The maths behind
 
 The equation for a fixed scheduled repayment \\(M\\) of a principal loan \\(P\\) over a number of periods \\(n\\) with an interest rate \\(r\\) is
 
