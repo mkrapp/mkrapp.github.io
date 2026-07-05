@@ -19,7 +19,7 @@ These mortgage calculators are also not showing all the information.
 Rarely do you see straight away how much interest you have to pay.
 For a 30-year loan that can be as much as the principal loan you want to borrow.
 
-Worst of all, you wouldn't learn how beautiful [amortization](https://en.wikipedia.org/wiki/Amortization_(accounting)){:target="_blank"} can look like.
+Worst of all, you wouldn't learn how [amortization](https://en.wikipedia.org/wiki/Amortization_(accounting)){:target="_blank"} works.
 And that would be a shame.
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
@@ -175,6 +175,22 @@ The contour lines show combinations of **interest rate** and **loan term** that 
 </div>
 
 <div class="result" id="result"></div>
+
+# Technical details
+
+This is for those who want to see what's going on under the hood.
+
+You're looking at monthly repayments conditional on the length of the loan term (horizontal axis) and annual interest rate (vertical axis).
+
+You click on any point in the graph; the sliders above for *Loan term* and *Annual interest rate* will be updated.
+
+Have a go and see what happens when you move left and right or up and down. 
+Pay attention to the *Total interest*.
+For example, if you try to follow one of the contour lines, say $4,000, from lower left to upper right, that means you're still paying the same amount each month.
+But the the total paid depends on where you are on that $4,000 contour line.
+
+Imagine you have a much higher loan and the loan term extends to infinity. This way you could repay a higher loan indefinitely with a reasonable monthly repayment.
+That's what we call ***rent***.
 
 <svg id="viz" width="1100" height="760" viewBox="0 0 1100 760"></svg>
 
@@ -615,9 +631,6 @@ The contour lines show combinations of **interest rate** and **loan term** that 
   drawContours(+principalInput.property("value"));
   update(false);
 </script>
-
-
-# Technical details
 
 The equation for a fixed scheduled repayment \\(M\\) of a principal loan \\(P\\) over a number of periods \\(n\\) with an interest rate \\(r\\) is
 
