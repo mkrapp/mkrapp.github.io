@@ -187,7 +187,7 @@ For example, if you try to follow one of the contour lines, say $4,000, from low
 But the the total paid depends on where you are on that $4,000 contour line.
 
 Now, imagine you have a much higher loan and the loan term extends to infinity. This way you could repay a higher loan indefinitely with a reasonable monthly repayment.
-That's what we call ***rent***.
+That's what we call ***rent***. 🤩
 
 ## How it works
 
