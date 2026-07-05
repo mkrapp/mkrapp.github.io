@@ -178,9 +178,8 @@ And that would be a shame.
 
 This is for those who want to see what's going on under the hood.
 
-You're looking at monthly repayments conditional on the length of the loan term (horizontal axis) and annual interest rate (vertical axis).
-
-You click on any point in the graph; the sliders above for *Loan term* and *Annual interest rate* will be updated.
+Monthly repayments are conditional on the length of the loan term (horizontal axis) and annual interest rate (vertical axis).
+Click on any point in the graph and the sliders above for *Loan term* and *Annual interest rate* will be updated.
 
 Have a go and see what happens when you move left and right or up and down. 
 Pay attention to the *Total interest*.
