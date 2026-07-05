@@ -158,8 +158,6 @@ And that would be a shame.
     }
   </style>
 
-The contour lines show combinations of **interest rate** and **loan term** that produce the same monthly repayment for the selected loan amount. This makes the trade-off visible: for a fixed loan, a shorter term can have the same repayment effect as a higher interest rate, and vice versa. 
-
 <div class="controls">
   <label for="principal">Loan amount</label>
   <input id="principal" type="range" min="50000" max="1500000" step="10000" value="650000">
@@ -189,8 +187,12 @@ Pay attention to the *Total interest*.
 For example, if you try to follow one of the contour lines, say $4,000, from lower left to upper right, that means you're still paying the same amount each month.
 But the the total paid depends on where you are on that $4,000 contour line.
 
-Imagine you have a much higher loan and the loan term extends to infinity. This way you could repay a higher loan indefinitely with a reasonable monthly repayment.
+Now, imagine you have a much higher loan and the loan term extends to infinity. This way you could repay a higher loan indefinitely with a reasonable monthly repayment.
 That's what we call ***rent***.
+
+## How it works
+
+The contour lines show combinations of **interest rate** and **loan term** that produce the same monthly repayment for the selected loan amount. This makes the trade-off visible: for a fixed loan, a shorter term can have the same repayment effect as a higher interest rate, and vice versa. 
 
 <svg id="viz" width="1100" height="760" viewBox="0 0 1100 760"></svg>
 
@@ -631,6 +633,8 @@ That's what we call ***rent***.
   drawContours(+principalInput.property("value"));
   update(false);
 </script>
+
+## What about the math?
 
 The equation for a fixed scheduled repayment \\(M\\) of a principal loan \\(P\\) over a number of periods \\(n\\) with an interest rate \\(r\\) is
 
